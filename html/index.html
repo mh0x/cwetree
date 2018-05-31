@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CWEtree v0.3</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="https://github.com/mh0x/cwetree" title="CWEtree on GitHub" target="_blank">CWEtree</a>
+            <span>v0.3</span>
+        </h1>
+        <div id="controls">
+            <h2>
+                Controls
+                <input id="toggle" type="checkbox" />
+            </h2>
+            <div id="form">
+                <ul>
+                    <li>clicking a node toggles its children</li>
+                    <li>double-clicking a node opens the CWE</li>
+                </ul>
+                <select id="view">
+                    <option value="699" selected>Development Concepts</option>
+                    <option value="1000">Research Concepts</option>
+                    <option value="1008">Architectural Concepts</option>
+                </select>
+                <br />
+                <input id="length" name="length" type="number" min="24" value="36" />
+                <label for="length">label length (chars)</label>
+                <br />
+                <input id="width" name="width" type="number" min="128" value="224" />
+                <label for="width">column width (px)</label>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/d3.layout.min.js"></script>
+    <script src="js/699.js"></script>
+    <script src="js/1000.js"></script>
+    <script src="js/1008.js"></script>
+    <script src="js/cwetree.js"></script>
+</body>
+</html>

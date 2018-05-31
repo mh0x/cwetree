@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/bg.png');
+    overflow-y: hidden;
+    font-family: 'Helvetica Neue', Helvetica;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+h1 {
+    margin: 0 0 10px;
+}
+
+h1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+h1 span {
+    font-size: 12px;
+}
+
+#controls {
+    padding: 8px 10px 10px;
+    background-color: rgba(230, 230, 230, 0.8);
+    font-size: 12px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+input[type='checkbox'] {
+    float: right;
+    margin-top: 4px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+ul li {
+    padding-left: 5px;
+}
+
+select {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+input[type='number'] {
+    width: 40px;
+    margin: 5px 5px 5px 0;
+    font-size: 12px;
+}
+
+g.node {
+    cursor: pointer;
+}
+
+g.node:hover {
+    fill: steelblue;
+}
+
+g.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+g.node text {
+    font-size: 12px;
+}
+
+path.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
